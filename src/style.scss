@@ -1,0 +1,215 @@
+
+  
+  @keyframes levitate {
+    0% {
+      transform: translateY(0); /* Position initiale */
+    }
+    50% {
+      transform: translateY(-10px); /* Position de lévitation */
+    }
+    100% {
+      transform: translateY(0); /* Retour à la position initiale */
+    }
+  }
+
+  @mixin button{
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+    background: #7AA27C;
+    border: 3px solid #7AA27C;
+    cursor: pointer;
+    &:hover{
+        background-color: transparent;
+        color:#7AA27C;
+        transition: all .3s ease-in-out;
+    }
+  }
+
+  @mixin title{
+    font-size:3.5vh;
+    font-family: 'Irish Grover';
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+
+    &::after{
+        display: block;
+        content:"";
+        width:60%;
+        height:2px;
+        margin-top:5px;
+        background-color: black;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  }
+
+*{
+    box-sizing: border-box;
+    &::after, &::before{
+        box-sizing: border-box;
+    }
+}
+
+img{
+    max-width:100%;
+}
+
+html{
+    font-size:62.5%
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:1.4rem;
+    background-color: rgba(209,231,207, 0.4);
+}
+
+a, a:hover, a:visited{
+    text-decoration: none;
+}
+
+.nav{
+    background-color: rgba(252, 252, 252, 0.2);
+    align-self:flex-start;
+    width: 100%;
+    &__list{
+        display: flex;
+        justify-content: flex-end;
+        gap:3rem;
+        margin-right:10%;
+        padding:2rem 0;
+    }
+
+    &__item{
+        font-size:2.2vh;
+        font-family: 'Inknut Antiqua', sans-serif;
+    
+    }
+}
+
+.header{
+    position:relative;
+    background-image: url('./assets/aurores_boreales.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height:90vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &__overlay{
+        position: absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width: 100%;
+        background-color: rgba(7, 10, 8, 15%);
+        z-index:3;
+    }
+    &__name{
+        color:#f2f2f2;
+        font-size:6vh;
+        font-family:'Archivo Black', sans-serif;
+        text-transform: uppercase;
+        letter-spacing:2px;
+        margin-bottom:3vh;
+     
+    }
+
+    &__job{
+        color:#f2f2f2;
+        font-family: 'Inknut Antiqua';
+        font-size:2.3vh;
+        text-align: center;
+
+    }
+
+    &__arrow{
+        width:7vh;
+        height:7vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: rgba(2, 20, 5, 0.5);
+        margin-bottom:2vh;
+        position: relative;
+        cursor: pointer;
+        animation: levitate 2s infinite alternate ease-in-out;
+      
+    }
+}
+
+// La partie About
+
+.about{
+    
+    margin:2vh 5vw;
+    &__title{
+       @include title()
+    }
+    &__profile{
+        width:60vh;
+        height:60vh;
+        border-radius: 43% 57% 60% 40% / 44% 47% 53% 56% ;
+        border: 5px black solid;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        margin: 3vh 0;
+        
+    }
+
+    &__speaking{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 2vh;
+        width:60vh;
+        border-radius: 10px;
+        padding: 2rem 2rem;
+        background-color: #f2f2f2;
+        border: 3px black solid;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        
+    }
+
+    &__actions{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__cv, &__contact{
+        @include button()
+    }
+}
+
+.skills{
+    height:30vh;
+    background: linear-gradient(180deg,  rgba(73, 115, 85, 0.20) 20%, rgba(122, 162, 124, 0.96) 100%);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        @include title();
+    }
+
+    &__speech{
+        font-family: 'Poppins';
+        font-size:2vh;
+
+    }
+
+    &__list{
+        display: flex;
+    }
+}
