@@ -19,7 +19,7 @@ const About = () =>{
                 </p>
                  <div className="about__actions">
                     <p className="about__contact"><a href="mailto:marilynedelia@gmail.com">Me contacter</a></p>
-                    <p className="about__cv">Télécharger mon CV</p>
+                   <p className="about__cv"> <a href="../assets/MarilyneCV.pdf" download="CV.pdf">Télécharger mon CV</a></p>
                  </div>
              </div>
             
