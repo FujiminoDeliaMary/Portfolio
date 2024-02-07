@@ -102,7 +102,8 @@ a, a:hover, a:visited {
 }
 
 .about {
-  margin: 2vh 5vw;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  padding: 2vh 5vw;
 }
 .about__title {
   font-size: 3.5vh;
@@ -165,11 +166,11 @@ a, a:hover, a:visited {
 }
 
 .skills {
-  height: 30vh;
   background: linear-gradient(180deg, rgba(73, 115, 85, 0.2) 20%, rgba(122, 162, 124, 0.96) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5vh 0;
 }
 .skills__title {
   font-size: 3.5vh;
@@ -192,7 +193,37 @@ a, a:hover, a:visited {
 .skills__speech {
   font-family: "Poppins";
   font-size: 2vh;
+  margin: 3vh 0;
+  text-align: center;
+  width: 50%;
 }
 .skills__list {
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 6rem;
+}
+.skills__back-title, .skills__front-title {
+  font-size: 3vh;
+  margin-bottom: 2vh;
+  font-weight: 600;
+  box-shadow: black bottom;
+}
+.skills__back, .skills__front {
+  font-size: 2.8vh;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  border: 1px black solid;
+  border-radius: 20px;
+  padding: 2vh 2vw;
+}
+.skills__back-list, .skills__front-list {
+  display: flex;
+  gap: 3rem;
+}
+.skills__back-list li, .skills__front-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

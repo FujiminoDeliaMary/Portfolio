@@ -1,5 +1,7 @@
 
-  
+  .bref{
+    position: fixed;
+  }
   @keyframes levitate {
     0% {
       transform: translateY(0); /* Position initiale */
@@ -27,7 +29,7 @@
 
   @mixin title{
     font-size:3.5vh;
-    font-family: 'Irish Grover';
+    font-family: 'Cantata One', sans-serif;
     width: fit-content;
     margin: 0 auto;
     position: relative;
@@ -63,14 +65,21 @@ html{
 body{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:1.4rem;
-    background-color: rgba(209,231,207, 0.4);
+    background-color: rgba(209,231,207, 0.1);
 }
 
 a, a:hover, a:visited{
     text-decoration: none;
+  
+}
+
+a{
+    color:black
 }
 
 .nav{
+    position: sticky;
+    z-index:30;
     background-color: rgba(252, 252, 252, 0.2);
     align-self:flex-start;
     width: 100%;
@@ -83,9 +92,12 @@ a, a:hover, a:visited{
     }
 
     &__item{
-        font-size:2.2vh;
-        font-family: 'Inknut Antiqua', sans-serif;
-    
+        font-size:clamp(20px,1.2vw,40px);
+        cursor: pointer;
+        font-family: 'Caudex', sans-serif;
+        a{
+            color:black;
+        }
     }
 }
 
@@ -111,8 +123,9 @@ a, a:hover, a:visited{
         z-index:3;
     }
     &__name{
+        text-align: center;
         color:#f2f2f2;
-        font-size:6vh;
+        font-size:clamp(25px,4vw,50px);
         font-family:'Archivo Black', sans-serif;
         text-transform: uppercase;
         letter-spacing:2px;
@@ -123,12 +136,15 @@ a, a:hover, a:visited{
     &__job{
         color:#f2f2f2;
         font-family: 'Inknut Antiqua';
-        font-size:2.3vh;
+        font-size:clamp(22px,1.8vw,35px);
         text-align: center;
 
     }
 
     &__arrow{
+        position: relative;
+        z-index: 30;
+        cursor: pointer;    
         width:7vh;
         height:7vh;
         display: flex;
@@ -138,19 +154,22 @@ a, a:hover, a:visited{
         background-color: rgba(2, 20, 5, 0.5);
         margin-bottom:2vh;
         position: relative;
-        cursor: pointer;
         animation: levitate 2s infinite alternate ease-in-out;
-      
+    
     }
+
+ 
 }
 
 // La partie About
 
 .about{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding:2vh 5vw;
     
-    margin:2vh 5vw;
     &__title{
-       @include title()
+       @include title();
+       margin: 5vh auto;
     }
     &__profile{
         width:60vh;
@@ -163,6 +182,7 @@ a, a:hover, a:visited{
     &__content{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         margin: 3vh 0;
         
     }
@@ -171,14 +191,14 @@ a, a:hover, a:visited{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        font-size: 2vh;
+        font-size: 2.3vh;
         width:60vh;
         border-radius: 10px;
         padding: 2rem 2rem;
         background-color: #f2f2f2;
         border: 3px black solid;
         text-align: center;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Caudex', sans-serif;
         
     }
 
@@ -194,22 +214,243 @@ a, a:hover, a:visited{
 }
 
 .skills{
-    height:30vh;
-    background: linear-gradient(180deg,  rgba(73, 115, 85, 0.20) 20%, rgba(122, 162, 124, 0.96) 100%);
+  
+    // background: linear-gradient(180deg,  rgba(73, 115, 85, 0.20) 20%, rgba(122, 162, 124, 0.96) 100%);
+    background-color: rgba(122, 162, 124, 0.1);
     display:flex;
     flex-direction: column;
     align-items: center;
+    padding: 5vh 0;
     &__title{
         @include title();
     }
 
     &__speech{
-        font-family: 'Poppins';
+        font-family: 'Caudex', sans-serif;
         font-size:2vh;
+        margin:3vh 0;
+        text-align: center;
+        width: 50%;
 
     }
 
     &__list{
         display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 6rem;
     }
+
+    &__back-title, &__front-title{
+        font-size:3vh;
+        margin-bottom:2vh;
+        font-weight: 600;
+        box-shadow: black bottom;
+    }
+
+    &__back, &__front{
+        font-size: 2.8vh;
+        text-align: center;
+        font-family: 'Caudex', sans-serif;
+        border: 1px black solid;
+        border-radius: 20px;
+        padding: 2vh 2vw;
+    }
+
+    &__back-list, &__front-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap:3rem;
+        li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+}
+
+.projects{
+    margin: 3vh 0;
+    &__title{
+   
+        @include title()
+    }
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+        margin-top:5vh;
+    }
+
+
+    .project{
+        padding: 2rem 3rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+        width:40%;
+        display: flex;
+        gap:2vh;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        &__title{
+            font-size: clamp(18px,1.4vw,35px);
+            text-transform: uppercase;
+            font-family: 'Cantata One', sans-serif;
+            color:#605F5F;
+        }
+
+        &__description{
+            height:5vh;
+            font-size: clamp(15px,1vw, 30px);
+            font-family: 'Caudex', sans-serif;
+        }
+
+        &__home{
+            height:35vh;
+        }
+     
+
+        .tools{
+            
+
+            &__title{
+                margin-bottom:2vh;
+                font-size: clamp(15px,1vw, 30px);
+                font-family: 'Caudex', sans-serif;
+            }
+            &__img{
+                display: flex;
+                justify-content: center;
+                gap:2vw;
+             
+            }
+           
+
+        }
+
+        &__links{
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+            display: flex;
+        }
+
+        &__link{
+            @include button();
+            padding: 1rem 2.5rem;
+            margin-top:4vh;
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Caudex', sans-serif;
+    font-size: clamp(15px,1.2vw, 25px);
+    gap:2vh;
+    padding: 2vh;
+    text-align: center;
+    color:#f2f2f2;
+    background-color:  #252525;
+
+    &__tel, &__email{
+        color:#f2f2f2;
+        &:hover{
+            color:#989696
+        }
+    }
+
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover{
+            color:#989696
+        }
+    }
+}
+
+
+
+
+
+@media screen and (width < 768px) {
+
+    .about{
+        &__profile{
+            width: 35vh;
+            
+        }  
+    }
+
+    .skills{
+        &__speech{
+            width: fit-content;
+            padding: 0 2vw;
+        }
+        &__back-list, &__front-list{
+            justify-content: center;
+            gap:4rem;
+        }   
+      
+    }
+
+   
+}
+
+@media screen and (width < 1300px) {
+
+    .projects{
+        &__container{
+            gap:2vh
+        }
+    }
+    .projects .project{
+        width: 80%;
+    }
+
+    .about{
+
+        &__profile{
+            width: 50vh;
+            height: auto;
+        }
+        
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:5vh;
+        }
+
+        &__actions{
+            margin-top:5vh;
+            justify-content: center;
+        }
+
+        &__contact{
+            display: none;
+        }
+
+       
+        &__speaking{
+            width: fit-content;
+            border: none;
+            background:none;
+           
+        }
+
+        
+    }
+
 }
