@@ -15,7 +15,7 @@ const Skills = () =>{
 
             <div className="skills__list">
 
-                <div className="skills__front">
+                <div className="skills__front" data-aos="fade-down-right">
                     <h3 className="skills__front-title">Front-end</h3>
                     <ul className="skills__front-list">
                         <li><FaHtml5 size={40} color="#e44d26" />Html5</li>
@@ -26,7 +26,7 @@ const Skills = () =>{
                         <li><FaJs size={40} color="#f7df1e" />Javascript</li>
                     </ul>
                 </div>
-                <div className="skills__back">
+                <div className="skills__back" data-aos="fade-down-left">
                     <h3 className="skills__back-title">Back-end</h3>
                     <ul className="skills__back-list">
                         <li><SiPhp size={55} color="#787cb4"/>Php</li>

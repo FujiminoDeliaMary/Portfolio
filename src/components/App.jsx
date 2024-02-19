@@ -1,12 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import '../style.scss';
 import About from "./About";
 import Skills from "./skills";
 import Projects from "./Projects";
 import Footer from "./Footer";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
 
 const App = () =>{
+
+    useEffect(() => {
+        AOS.init({ duration: 1000 }); // Initialise AOS avec la durée d'animation spécifiée
+      }, []);
+
     const [scrollTop, setScrollTop] = useState(0);
 
         const handleScroll = event => {
@@ -14,7 +22,7 @@ const App = () =>{
             console.log(scrollTop)
         };
     return <div className="App" onScroll={handleScroll}>
-        <h2 className="bref">{scrollTop}</h2>
+    
         <Header />
         <About />
         <Skills />
