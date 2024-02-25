@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 import '../reset.css';
-import '../style.scss';
+
 import { Link } from "react-scroll";
 
 

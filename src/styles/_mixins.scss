@@ -1,0 +1,39 @@
+@mixin button{
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background: #7AA27C;
+    border: 3px solid #7AA27C;
+    a{
+        color : black
+    }
+    cursor: pointer;
+    &:hover{
+        background-color: transparent;
+        a{
+            color:#7AA27C; 
+        }
+       
+        transition: all .3s ease-in-out;
+    }
+  }
+
+  @mixin title{
+    font-size:clamp(25px,2vw,50px);
+    font-family: 'Cantata One', sans-serif;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom:10vh;
+    position: relative;
+
+    &::after{
+        display: block;
+        content:"";
+        width:60%;
+        height:2px;
+        margin-top:5px;
+        background-color: black;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  }

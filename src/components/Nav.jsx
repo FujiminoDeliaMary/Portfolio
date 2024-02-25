@@ -30,7 +30,12 @@ import { Link } from "react-scroll";
                         </Link>
                   </li>
                   <li class="nav__item">
-                         <a href="mailto:marilynedelia@gmail.com">Contact</a>
+                  <Link 
+                            to="contact" activeClass='active'
+                            smooth={true}
+                            spy={true}>
+                                Contact
+                        </Link>
                   </li>
          
                 </ul>

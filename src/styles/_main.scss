@@ -1,0 +1,433 @@
+
+*{
+    box-sizing: border-box;
+    &::after, &::before{
+        box-sizing: border-box;
+    }
+}
+
+img{
+    max-width:100%;
+}
+
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:1.4rem;
+    background-color: rgba(209,231,207, 0.1);
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+a, a:hover, a:visited{
+    text-decoration: none;
+  
+}
+
+
+
+.nav{
+    position: relative;
+ 
+    z-index:30;
+    background-color: rgba(252, 252, 252, 0.2);
+    align-self:flex-start;
+    width: 100%;
+    &__list{
+        display: flex;
+        justify-content: flex-end;
+        gap:3rem;
+        margin-right:10%;
+        padding:2rem 0;
+    }
+
+    &__item{
+  
+        font-size:clamp(20px,1.2vw,40px);
+        cursor: pointer;
+        font-family: 'Satoshi', sans-serif;
+
+        a{
+            color:black;
+        }
+        &:hover{
+            border-width: 2px;
+        }
+    }
+}
+
+.header{
+    position:relative;
+    background-image: url('../assets/aurores_boreales.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height:90vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &__overlay{
+        position: absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width: 100%;
+        background-color: rgba(7, 10, 8, 15%);
+        z-index:3;
+    }
+    &__name{
+        text-align: center;
+        color:#f2f2f2;
+        font-size:clamp(25px,4vw,50px);
+        font-family:'Archivo Black', sans-serif;
+        text-transform: uppercase;
+        letter-spacing:2px;
+        margin-bottom:3vh;
+     
+    }
+
+    &__job{
+        color:#f2f2f2;
+        font-family: 'Inknut Antiqua';
+        font-size:clamp(22px,1.8vw,35px);
+        text-align: center;
+
+    }
+
+    &__arrow{
+        position: relative;
+        z-index: 30;
+        cursor: pointer;    
+        width:7vh;
+        height:7vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: rgba(2, 20, 5, 0.5);
+        margin-bottom:2vh;
+        position: relative;
+        animation: levitate 2s infinite alternate ease-in-out;
+    
+    }
+
+ 
+}
+
+// La partie About
+
+.about{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding:2vh 5vw;
+    
+    &__title{
+       @include title();
+      
+    }
+    &__profile{
+        width:450px;
+        border-radius: 43% 57% 60% 40% / 44% 47% 53% 56% ;
+        border: 1px black solid;
+        animation : levitate 3s infinite alternate ease-in-out;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 3vh 0;
+        
+    }
+
+    &__speaking{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: clamp(14px,1.1vw,40px);
+        width:40%;
+        border-radius: 10px;
+        padding: 2rem 2rem;
+        background-color: #f2f2f2;
+        border: 3px black solid;
+        text-align: center;
+        line-height: 1.2;
+        font-family: 'Ranade', sans-serif;
+        
+    }
+
+    &__actions{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__cv{
+        @include button();
+    }
+
+    &__contact{
+        @include button()
+    }
+}
+
+.skills{
+  
+    background-color: rgba(122, 162, 124, 0.1);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 0;
+    &__title{
+        @include title();
+    }
+
+    &__speech{
+        font-family: 'Ranade', sans-serif;
+        font-size: clamp(15px,1.2vw,40px);
+        margin-bottom:10vh;
+        text-align: center;
+        line-height: 1.2;
+        width: 50%;
+
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 6rem;
+    }
+
+    &__back-title, &__front-title{
+        font-size: clamp(25px, 2vw, 45px);
+        margin-bottom:2vh;
+        font-weight: 600;
+        box-shadow: black bottom;
+    }
+
+    &__back, &__front{
+        font-size: clamp(15px,1.1vw,40px);
+        text-align: center;
+        font-family: 'Ranade', sans-serif;
+        border: 1px black solid;
+        border-radius: 20px;
+        padding: 2vh 2vw;
+    }
+
+    &__back-list, &__front-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap:3rem;
+        li{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+}
+
+.projects{
+    margin: 3vh 0;
+    &__title{
+   
+        @include title()
+    }
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+        margin-top:5vh;
+    }
+
+
+    .project{
+        padding: 2rem 3rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+        width:40%;
+        display: flex;
+        gap:2vh;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        &__title{
+            font-size: clamp(20px,1.5vw,40px);
+            text-transform: uppercase;
+            font-family: 'Cantata One', sans-serif;
+            color:#605F5F;
+        }
+
+        &__description{
+            min-height:80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: clamp(14px,1.14vw,40px);
+            line-height: 1.2 ;
+            font-family: 'Ranade', sans-serif;
+        }
+
+        &__home{
+            width:100%;
+            height:300px;
+            object-fit: cover;
+            border: 20px solid transparent; /* Ajoute une bordure transparente */
+            transition: border-width 0.3s ease;
+            &:hover{
+                border-width: 5px; 
+            }
+        }
+     
+
+        .tools{
+            
+
+            &__title{
+                margin-bottom:2vh;
+                font-size: clamp(14px,1.1vw, 30px);
+                font-family: 'Ranade', sans-serif;
+            }
+            &__img{
+                display: flex;
+                justify-content: center;
+                gap:2vw;
+             
+            }
+           
+
+        }
+
+        &__links{
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+            display: flex;
+        }
+
+        &__link{
+            @include button();
+            padding: 1rem 2.5rem;
+            font-family: 'Ranade', sans-serif;
+            font-size: clamp(13px,1.1vw, 30px);
+            margin-top:4vh;
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Switzer', sans-serif;
+    font-size: clamp(15px,1.1vw, 30px);
+    gap:2vh;
+    padding: 2vh;
+    text-align: center;
+    color:#f2f2f2;
+    background-color:  #252525;
+
+    &__tel, &__email{
+        color:#f2f2f2;
+        &:hover{
+            color:#989696
+        }
+    }
+
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover{
+            color:#989696
+        }
+    }
+}
+
+.contact{
+    margin: 20rem 6rem;
+    font-size: clamp(18px,1.3vw,40px);
+    font-family: 'Splice Sans', sans-serif;
+    max-width:60%;
+    &__title{
+        margin-bottom: 10rem;
+        font-size:clamp(25px,2vw,50px);
+        font-weight: 700;
+    }
+    
+    .form{
+
+        &__group{
+            display: flex;
+            flex-direction: column;
+            margin-top:3vh;
+            position: relative;
+        }
+
+        &__label{
+          
+            display: block;
+            color: #523e50;
+            display: block;
+            font-size: 14px;
+            position: absolute;
+            top: -10px;
+            transition: .2s;
+
+            &--textarea{
+                position: relative;
+            }
+        }
+
+        &__field{
+            border: 0;
+            border-bottom: #252525 2px solid;
+            outline: 0;
+            background-color: transparent;
+            padding: 8px 0;
+            font-size: clamp(15px,1.1vw, 30px);
+            min-width:35vw;
+            color : #252525;
+            transition: .2s border-color;
+            &:focus{
+                border-color: #7AA27C ;
+            } 
+        }
+
+
+        &__field:placeholder-shown~.form__label {
+            cursor: text !important;
+            font-size: 14px !important;
+            top: 20px !important;
+        }
+        
+    
+        &__group-fullBorder{
+            border :2px solid #252525;
+
+        }
+    
+        &__submit{
+            margin-top:3rem;
+            @include button();
+            font-size:clamp(14px,1.1vw,40px);
+            font-family: 'Ranade', sans-serif;
+            padding: 1rem 4rem;
+        }
+    }
+
+
+}
+

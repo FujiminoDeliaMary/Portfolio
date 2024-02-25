@@ -55,7 +55,7 @@ const Projects = () =>{
                         </div>
                         <div className="project__links">
                             <ul>
-                                <li className="project__link"><Link to="contact">Voir le projet</Link></li>
+                                <li className="project__link"><a href="/">Voir le projet</a></li>
                                 <li className="project__link"><Link to="contact">Voir le code</Link></li>
                             </ul>
                         </div>

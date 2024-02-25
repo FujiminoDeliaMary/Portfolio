@@ -1,0 +1,98 @@
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .projects{
+        overflow-x: hidden;
+        .project{
+            width:95%;
+            &__description{
+                
+                height:17vh;
+               
+        }}
+    }
+    
+    .about{
+        overflow-x: hidden;
+        &__profile{
+            width: 350px;
+            
+        }  
+    }
+
+    .skills{
+        overflow-x: hidden;
+        &__speech{
+            width: fit-content;
+            padding: 0 2vw;
+        }
+        &__back-list, &__front-list{
+            justify-content: center;
+            gap:4rem;
+        }   
+      
+    }
+
+    .contact{
+        overflow-x: hidden;
+        max-width:100%;
+    }
+
+    .nav{
+        overflow-x: hidden;
+        opacity: 0;
+    }
+
+   
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .projects{
+        &__container{
+            gap:5vh
+        }
+
+        .project{
+            width: 95%;
+        }
+    }
+
+
+    .about{
+
+        &__profile{
+            width: 400px;
+            height: auto;
+        }
+        
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:5vh;
+        }
+
+        &__actions{
+            margin-top:5vh;
+            justify-content: center;
+        }
+
+        &__contact{
+            display: none;
+        }
+
+       
+        &__speaking{
+            width: fit-content;
+            border: none;
+            background:none;
+           
+        }
+
+        
+    }
+
+}
