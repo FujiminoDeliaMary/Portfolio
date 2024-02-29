@@ -4,7 +4,9 @@ import { Link } from "react-scroll";
 
  const Nav = () =>{
     return <nav class="nav">
+                <p className="nav__title">Portfolio.</p>
                 <ul class="nav__list">
+                  
                     <li class="nav__item">
                          <Link 
                             to="about" activeClass='active'

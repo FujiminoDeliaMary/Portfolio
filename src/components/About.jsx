@@ -11,7 +11,7 @@ const About = () =>{
         <div className="about__content">
              <img src={delia} alt="" className="about__profile" data-aos="fade-down-right"/>
             <div className="about__speaking" data-aos="zoom-out">
-                <p>Actuellement entrain de suivre une formation de développeur FullStack à la rochelle, je suis une étudiante de 18 ans qui se spécialise en technologies du web tels que Css, Js, Html et bien d'autres framework et outils de développement
+                <p>Actuellement entrain de suivre une formation de <strong>développeur FullStack</strong> à la rochelle, je suis une étudiante de 18 ans qui se spécialise en <strong>technologies du web</strong> tels que Css, Js, Html et bien d'autres framework et outils de développement
                     front-end et back-end. Pationnée depuis maintenant 4 ans, si je devais me décrire en une technologie, je serais probablement ReactJs, innovante , fiable, en évolution et pleine de surprises.
                 </p>
                 <br></br>

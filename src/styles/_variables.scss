@@ -15,3 +15,28 @@
     src: url('../assets/fonts/Switzer-Regular.woff') format('woff'),
          url('../assets/fonts/Switzer-Regular.woff2') format('woff2');
 }
+
+
+@font-face {
+    font-family: 'General Sans';
+    src: url('../assets/fonts/GeneralSans-Medium.woff') format('woff'),
+         url('../assets/fonts/GeneralSans-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Britney';
+    src: url('../assets/fonts/Britney-Regular.woff') format('woff'),
+         url('../assets/fonts/Britney-Regular.woff2') format('woff2');
+}
+
+@keyframes levitate {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); 
+    }
+    100% {
+      transform: translateY(0); 
+    }
+  }
