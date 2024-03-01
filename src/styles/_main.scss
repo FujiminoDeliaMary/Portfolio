@@ -6,6 +6,9 @@
     }
 }
 
+strong{
+    font-weight: bold;
+}
 img{
     max-width:100%;
 }
@@ -24,7 +27,7 @@ body{
 
 a, a:hover, a:visited{
     text-decoration: none;
-  
+    color: #f2f2f2
 }
 
 
@@ -354,17 +357,12 @@ a, a:hover, a:visited{
     color:#f2f2f2;
     background-color:  #252525;
 
-    &__tel, &__email{
-        color:#f2f2f2;
-        &:hover{
-            color:#989696
-        }
-    }
-
-    p{
+    &__tel, &__linkedin, &__location{
         display: flex;
         align-items: center;
         justify-content: center;
+        color:#f2f2f2;
+        gap:3px;
         cursor: pointer;
         &:hover{
             color:#989696
