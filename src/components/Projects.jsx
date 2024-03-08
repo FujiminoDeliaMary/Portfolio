@@ -33,7 +33,7 @@ const Projects = () =>{
                         <div className="project__links">
                             <ul>
                                 <li className="project__link"><a href="https://agence-artfull-code.lpmiaw.univ-lr.fr/" target="_blank" rel="noopener noreferrer">Voir le projet</a></li>
-                                <li className="project__link"><Link href="https://agence-artfull-code.lpmiaw.univ-lr.fr/">Voir le code</Link></li>
+                                <li className="project__link"><a href="https://github.com/FujiminoDeliaMary/ArtfullCode" target="_blank" rel="noreferrer">Voir le code</a></li>
                             </ul>
                         </div>
                     </article>
@@ -56,7 +56,7 @@ const Projects = () =>{
                         <div className="project__links">
                             <ul>
                                 <li className="project__link"><a href="/">Voir le projet</a></li>
-                                <li className="project__link"><Link to="contact">Voir le code</Link></li>
+                                <li className="project__link"><a href="https://github.com/FujiminoDeliaMary/Portfolio" target="_blank" rel="noreferrer">Voir le code</a></li>
                             </ul>
                         </div>
                     </article>

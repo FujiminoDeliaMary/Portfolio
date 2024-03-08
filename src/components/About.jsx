@@ -12,7 +12,7 @@ const About = () =>{
              <img src={delia} alt="" className="about__profile" data-aos="fade-down-right"/>
             <div className="about__speaking" data-aos="zoom-out">
                 <p>Actuellement entrain de suivre une formation de <strong>développeur FullStack</strong> à la rochelle, je suis une étudiante de 18 ans qui se spécialise en <strong>technologies du web</strong> tels que Css, Js, Html et bien d'autres framework et outils de développement
-                    <strong>front-end</strong> et <strong>back-end</strong>. Pationnée depuis maintenant 4 ans, si je devais me décrire en une technologie, je serais probablement ReactJs, innovante , fiable, en évolution et pleine de surprises.
+                    <strong>front-end</strong> et <strong>back-end</strong>. Passionnée depuis maintenant 4 ans, si je devais me décrire en une technologie, je serais probablement ReactJs, innovante , fiable, en évolution et pleine de surprises.
                 </p>
                 <br></br>
                 <p>N'étant pas qu'une développeuse mais avant tout une humaine, je suis aussi très passionée de tout ce qui touche musique, cinéma, manga et mythologie grecque.
