@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.9e9b93ce.css",
-    "main.js": "./static/js/main.76dc7f6e.js",
+    "main.css": "./static/css/main.54db4c2b.css",
+    "main.js": "./static/js/main.55314388.js",
     "static/media/porfolio.png": "./static/media/porfolio.f2dce43c93c44165bc18.png",
     "static/media/artfullCode.png": "./static/media/artfullCode.f092bf28754360374017.png",
     "static/media/aurores_boreales.jpg": "./static/media/aurores_boreales.7ba72f1a0ac26e67993f.jpg",
@@ -22,11 +22,11 @@
     "static/media/webpack.svg": "./static/media/webpack.4632c4b65b271f96faadad59971be688.svg",
     "static/media/emailJs.svg": "./static/media/emailJs.dfc0c43946d46d0af5b201f75cab822a.svg",
     "index.html": "./index.html",
-    "main.9e9b93ce.css.map": "./static/css/main.9e9b93ce.css.map",
-    "main.76dc7f6e.js.map": "./static/js/main.76dc7f6e.js.map"
+    "main.54db4c2b.css.map": "./static/css/main.54db4c2b.css.map",
+    "main.55314388.js.map": "./static/js/main.55314388.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e9b93ce.css",
-    "static/js/main.76dc7f6e.js"
+    "static/css/main.54db4c2b.css",
+    "static/js/main.55314388.js"
   ]
 }
