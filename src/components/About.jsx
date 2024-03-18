@@ -1,5 +1,5 @@
 import React from "react";
-import profil from '../assets/profil.jpg'
+import profil from '../assets/profil.png'
 import { Link } from "react-scroll";
 
 const About = () =>{
