@@ -18,7 +18,7 @@ const About = () =>{
                 
                  <div className="about__actions">
                     <p className="about__contact"><Link to='#contact'>Me contacter</Link></p>
-                   <p className="about__cv"> <a href="./CVTSENE.pdf" download="CV.pdf">Télécharger mon CV</a></p>
+                   <p className="about__cv"> <a href="./CVMarilyneTSENE.pdf" download="CV.pdf">Télécharger mon CV</a></p>
                  </div>
              </div>
             

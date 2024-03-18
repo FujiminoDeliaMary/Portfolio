@@ -13,7 +13,7 @@ const Header = () =>{
                 <Nav />
                 <div>
                   <h1 className="header__name">Marilyne delia tsene</h1>
-                  <h2 className="header__job">I'm a creative developer web Full Stack</h2>
+                  <p className="header__job">I'm a creative developer web Full Stack</p>
                 </div>
                
 
