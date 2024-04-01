@@ -4,6 +4,14 @@ import { FaReact, FaJs, FaHtml5, FaCss3, FaSymfony, FaNodeJs, FaBootstrap, FaSas
 import { SiPhp } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { IoLogoWordpress } from "react-icons/io5";
+import vueJs from '../assets/vuejslogo.svg.png'
+import wooCommerce from '../assets/wooCommerce.png'
+import { SiWoocommerce } from "react-icons/si";
+import phplogo from '../assets/phplogo.png'
+import mySql from '../assets/sqllogo.png'
+import gitlOgo from '../assets/gitHub.png'
+import figmaLogo from '../assets/figma.png'
+import devOps from '../assets/devOps.png'
 
 const Skills = () =>{
 
@@ -22,6 +30,7 @@ const Skills = () =>{
                         <li><FaCss3 size={40} color="#264de4" />Css3</li>
                         <li><FaSass size={40} color="#cb6799" />Sass</li>
                         <li><FaReact size={40} color="#017fa5" /> React JS</li>
+                        <li><img src={vueJs} alt="VueJs" className="img"/>Vue Js</li>
                         <li><FaBootstrap size={40} color="#7209f5" />Boostrap</li>
                         <li><FaJs size={40} color="#f7df1e" />Javascript</li>
                     </ul>
@@ -35,6 +44,17 @@ const Skills = () =>{
                         <li><BiLogoPostgresql size={50} color="#2f6792"/>PostGresql</li>
                         <li><FaNodeJs size={40} />Node Js</li>
                         <li><IoLogoWordpress size={40} color="#1b769c"/>WordPress</li>
+      
+                    </ul> 
+                </div>
+
+                <div className="skills__tools" data-aos="fade-down-left">
+                    <h3 className="skills__tools-title">Tools</h3>
+                    <ul className="skills__tools-list">
+                        <li><img src={gitlOgo} alt="Git" />Git</li>
+              
+                        <li><img src={devOps} alt="DevOps" />DevOps</li>
+
                     </ul> 
                 </div>
 

@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "./static/css/main.3c3c329f.css",
+    "main.js": "./static/js/main.28c8caf2.js",
+    "static/media/porfolio.png": "./static/media/porfolio.f2dce43c93c44165bc18.png",
+    "static/media/artfullCode.png": "./static/media/artfullCode.f092bf28754360374017.png",
+    "static/media/aurores_boreales.jpg": "./static/media/aurores_boreales.7ba72f1a0ac26e67993f.jpg",
+    "static/media/React_Logo_SVG.svg": "./static/media/React_Logo_SVG.bd9b9402dcafca21df62e7adae8acd63.svg",
+    "static/media/nodeJs.svg": "./static/media/nodeJs.62c583d6ffb13082f28908310ecbe03b.svg",
+    "static/media/profil.png": "./static/media/profil.929dab4dcd3d99915e10.png",
+    "static/media/Satoshi-Medium.woff": "./static/media/Satoshi-Medium.2419b46c96ed15331ba2.woff",
+    "static/media/Britney-Regular.woff": "./static/media/Britney-Regular.c601bc200523b61881fd.woff",
+    "static/media/GeneralSans-Medium.woff": "./static/media/GeneralSans-Medium.9ff9c3429a09b987bdec.woff",
+    "static/media/Ranade-Light.woff": "./static/media/Ranade-Light.8cfa3618d293636b358c.woff",
+    "static/media/sass.svg": "./static/media/sass.6e2d1f3099e33d711c450ee932d8ceb3.svg",
+    "static/media/Satoshi-Medium.woff2": "./static/media/Satoshi-Medium.1ffe968245568e8ba1e7.woff2",
+    "static/media/Britney-Regular.woff2": "./static/media/Britney-Regular.42830fa20d3b6902eb98.woff2",
+    "static/media/GeneralSans-Medium.woff2": "./static/media/GeneralSans-Medium.1096c81555467a69cc16.woff2",
+    "static/media/Switzer-Regular.woff": "./static/media/Switzer-Regular.3b4d31f031bb985c9f51.woff",
+    "static/media/Ranade-Light.woff2": "./static/media/Ranade-Light.2fd408e35a80223e6c9d.woff2",
+    "static/media/Switzer-Regular.woff2": "./static/media/Switzer-Regular.2ab0f750fdf655eb71e1.woff2",
+    "static/media/webpack.svg": "./static/media/webpack.4632c4b65b271f96faadad59971be688.svg",
+    "static/media/emailJs.svg": "./static/media/emailJs.dfc0c43946d46d0af5b201f75cab822a.svg",
+    "index.html": "./index.html",
+    "main.3c3c329f.css.map": "./static/css/main.3c3c329f.css.map",
+    "main.28c8caf2.js.map": "./static/js/main.28c8caf2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c3c329f.css",
+    "static/js/main.28c8caf2.js"
+  ]
+}

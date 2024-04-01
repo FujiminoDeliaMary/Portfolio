@@ -232,14 +232,14 @@ a, a:hover, a:visited{
         gap: 6rem;
     }
 
-    &__back-title, &__front-title{
+    &__back-title, &__front-title, &__tools-title{
         font-size: clamp(25px, 2vw, 45px);
         margin-bottom:2vh;
         font-weight: 600;
         box-shadow: black bottom;
     }
 
-    &__back, &__front{
+    &__back, &__front, &__tools{
         font-size: clamp(15px,1.1vw,40px);
         text-align: center;
         font-family: 'Ranade', sans-serif;
@@ -248,10 +248,10 @@ a, a:hover, a:visited{
         padding: 2vh 2vw;
     }
 
-    &__back-list, &__front-list{
+    &__back-list, &__front-list, &__tools-list{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         gap:3rem;
         li{
@@ -259,6 +259,10 @@ a, a:hover, a:visited{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            gap:1rem
+        }
+        img{
+            width: 9rem;
         }
     }
 
@@ -271,10 +275,13 @@ a, a:hover, a:visited{
    
         @include title()
     }
+
+    
     &__container{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around; 
+        justify-content: space-around;
+        gap:5rem; 
         margin-top:5vh;
     }
 
@@ -330,8 +337,10 @@ a, a:hover, a:visited{
                 display: flex;
                 justify-content: center;
                 gap:2vw;
+              
              
             }
+         
            
 
         }

@@ -1,11 +1,14 @@
 import React from "react";
 import react from '../assets/projects/React_Logo_SVG.svg';
+import { FaVuejs } from "react-icons/fa";
 import webpack from '../assets/projects/webpack.svg';
 import nodeJS from '../assets/projects/nodeJs.svg';
 import sass from '../assets/projects/sass.svg';
 import emailJs from '../assets/projects/emailJs.svg';
 import portfolio from '../assets/projects/porfolio.png';
+import encycloCinema from '../assets/projects/Encylopédie Cinéma.png'
 import { Link } from "react-scroll";
+import vueJs from '../assets/vuejslogo.svg.png'
 import artfullCode from '../assets/projects/artfullCode.png';
 
 
@@ -57,6 +60,26 @@ const Projects = () =>{
                             <ul>
                                 <li className="project__link"><a href="/">Voir le projet</a></li>
                                 <li className="project__link"><a href="https://github.com/FujiminoDeliaMary/Portfolio" target="_blank" rel="noreferrer">Voir le code</a></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article className="project" data-aos="zoom-out">
+                        <h3 className="project__title">Encyclopédie cinéma</h3>
+                        <h4 className="project__description">Votre guide ultime dans l'univers du cinéma, des classiques aux dernières sorties.</h4>
+
+                        <img src={encycloCinema} alt="portfolio" className="project__home"/>
+                        <div className="tools">
+                            <h5 className="tools__title">Outils utilisés sur ce projet</h5>
+                            <div className="tools__img">
+                                {/* <p><img src={vueJs} alt="Vue Js" /></p> */}
+                                <p> <img src={sass} alt="sass" /></p>
+                            </div>
+                        </div>
+                        <div className="project__links">
+                            <ul>
+                                <li className="project__link"><a href="https://mtsene.lpmiaw.univ-lr.fr/encyclo-cinema/" target="_blank" rel="noreferrer">Voir le projet</a></li>
+                                <li className="project__link"><a href="https://github.com/FujiminoDeliaMary/encyclo-cinema" target="_blank" rel="noreferrer">Voir le code</a></li>
                             </ul>
                         </div>
                     </article>
